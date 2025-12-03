@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shearion - Engineering Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="p-8">
+            <div class="mb-12">
+                <h1 class="text-3xl font-bold text-white mb-2">Shearion</h1>
+                <p class="text-gray-400 text-sm">Engineering Studio</p>
+            </div>
+            
+            <nav class="space-y-2">
+                <a href="#home" class="nav-link block px-4 py-3 text-white rounded-lg">Home</a>
+                <a href="#about" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">About</a>
+                <a href="#products" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">Products</a>
+                <a href="#services" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">Services</a>
+                <a href="#training" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">Training</a>
+                <a href="#projects" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">Projects & Stories</a>
+                <a href="#partners" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">
+                    Partners & Certifications
+                    <span class="text-xs text-yellow-400 ml-2">(Coming Soon)</span>
+                </a>
+                <a href="#contact" class="nav-link block px-4 py-3 text-gray-300 rounded-lg">Contact</a>
+            </nav>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700">
+                <a href="mailto:contact@shearion.com" class="block text-gray-400 text-sm hover:text-white transition-colors">
+                    contact@shearion.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-area">
+        
+        <!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+    <!-- Background Image -->
+    <div class="bg-image-container">
+        <img src="images/hero-bg.jpg" alt="Background" class="bg-image">
+        <div class="bg-overlay"></div>
+    </div>
+    
+    <!-- Content with glass effect -->
+    <div class="relative z-10 container mx-auto px-8 max-w-6xl">
+        <div class="glass-effect p-8 md:p-12 rounded-2xl max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Engineering Solutions <br> 
+                <span class="text-blue-300">That Work</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-8">
+                Bridging the gap between theory and practice with hands-on engineering solutions across multiple disciplines.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center transition-colors">
+                    Get Started
+                </a>
+                <a href="#services" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg text-center backdrop-blur-sm transition-colors">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About card-->
+<!-- Why Shearion Section -->
+<section id="about" class="py-20 px-8 bg-white">
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl font-bold text-center mb-12">About Shearion</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900">Our Story</h3>
+                <p class="text-gray-600">
+                    We're a hands-on engineering studio that bridges the gap between theory and practice. 
+                    Unlike large consultancies, we're a small, dedicated team that builds, codes, and teaches.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-600">Cross-domain expertise in CS, Electronics & Mechanical Engineering</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-600">Practical, hands-on approach to problem-solving</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="ml-3 text-gray-600">Focus on real-world applications and tangible results</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-gray-900">Our Vision</h3>
+                <p class="text-gray-600">
+                    Making advanced engineering tools and manufacturing know-how accessible through hands-on projects and practical training.
+                </p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8">Our Mission</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Build practical, innovative products that solve real problems</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Deliver cross-domain engineering solutions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Provide honest, transparent services</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Offer project-based training that bridges theory and practice</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-2">•</span>
+                        <span>Build long-term relationships based on trust and results</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Main Services Cards -->
+        <section class="py-20 px-8 bg-white">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Products Card -->
+                    <div class="card-hover bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+                        <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 floating">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Products</h3>
+                        <p class="text-gray-600 mb-6">
+                            We build our own tools: Shearionbot (AI chatbots), TIDAPortal (data analysis), and Pymodla (model-based design).
+                        </p>
+                        <a href="#products" class="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center">
+                            Learn More 
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Engineering Services Card -->
+                    <div class="card-hover bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-100">
+                        <div class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 floating" style="animation-delay: 0.2s;">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Engineering Services</h3>
+                        <p class="text-gray-600 mb-6">
+                            From code to circuits to cut metal. Computer science, electronics, and mechanical work under one roof.
+                        </p>
+                        <a href="#services" class="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center">
+                            Explore Services 
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Training Card -->
+                    <div class="card-hover bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+                        <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 floating" style="animation-delay: 0.4s;">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Training & Workshops</h3>
+                        <p class="text-gray-600 mb-6">
+                            Hands-on training for SMEs to become future-ready technical leaders. From PLCs to cloud platforms.
+                        </p>
+                        <a href="#training" class="text-green-600 font-semibold hover:text-green-700 inline-flex items-center">
+                            View Programs 
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Shearion Section -->
+        <section class="py-20 px-8 bg-gray-900 text-white">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-4xl font-bold mb-12 text-center">Why Shearion?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl">
+                        <div class="text-3xl mb-4">🤝</div>
+                        <h3 class="text-xl font-bold mb-3">Small Team, Real Work</h3>
+                        <p class="text-gray-400">
+                            We're not a consultancy with 50 slides. We're a hands-on studio that builds, fixes, and teaches.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-xl">
+                        <div class="text-3xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-3">Hardware + Code</h3>
+                        <p class="text-gray-400">
+                            Real hardware, real software. We solder, wire, code, and deploy. No black boxes.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-xl">
+                        <div class="text-3xl mb-4">🔧</div>
+                        <h3 class="text-xl font-bold mb-3">Cross-Domain</h3>
+                        <p class="text-gray-400">
+                            CS, electronics, and mechanical engineering under one roof. We connect the dots.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-xl">
+                        <div class="text-3xl mb-4">💬</div>
+                        <h3 class="text-xl font-bold mb-3">Honest Communication</h3>
+                        <p class="text-gray-400">
+                            We tell you what we can do, what we cannot, and what we recommend not doing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-8 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p class="text-xl text-gray-600">Comprehensive engineering solutions across multiple domains</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Computer Science Services -->
+            <div class="service-card bg-white p-8 rounded-xl">
+                <div class="service-icon bg-blue-100 text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Computer Science</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Websites & web apps</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Data engineering & analytics</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Cloud platforms (AWS/GCP/Azure)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>LLM & AI integration</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Cyber security</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Electronics & Embedded Services -->
+            <div class="service-card bg-white p-8 rounded-xl">
+                <div class="service-icon bg-purple-100 text-purple-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Electronics & Embedded</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>PLC programming & HMI</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>Sensors & industrial networking</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>Embedded systems & ML</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>PCB design & manufacturing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>IoT solutions</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mechanical & Manufacturing Services -->
+            <div class="service-card bg-white p-8 rounded-xl">
+                <div class="service-icon bg-green-100 text-green-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Mechanical & Manufacturing</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>Custom fixtures & structures</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>CNC machining & grinding</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>Welding & fabrication</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>Steel laser cutting</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>Composites & ceramics</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Training Preview -->
+ <!-- Training & Workshops Section -->
+<section id="training" class="py-20 bg-white">
+    <div class="container mx-auto px-8 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Training & Workshops</h2>
+            <p class="text-xl text-gray-600">Hands-on learning experiences across multiple engineering disciplines</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Computer Science & Data -->
+            <div class="training-category p-8 rounded-xl border border-gray-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">CS & Data</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Python, MATLAB, Java</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Data engineering & analytics</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Cloud platforms</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>LLMs & AI workflows</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-500 mr-2">•</span>
+                        <span>Full-stack development</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Electronics & Control -->
+            <div class="training-category p-8 rounded-xl border border-gray-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Electronics & Control</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>LabVIEW & MATLAB</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>PLC programming</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>Industrial automation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>Embedded systems</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-500 mr-2">•</span>
+                        <span>Circuit design</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mechanical & Manufacturing -->
+            <div class="training-category p-8 rounded-xl border border-gray-200">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Mechanical & CAD</h3>
+                </div>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>CAD/CAM software</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>FEA & simulation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>CNC programming</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>3D printing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-green-500 mr-2">•</span>
+                        <span>Manufacturing processes</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Project stories Preview -->
+<!-- Projects & Stories Section -->
+<section id="projects" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-8 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Projects & Stories</h2>
+            <p class="text-xl text-gray-600">Real-world solutions and success stories from our engineering journey</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Project 1 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden border border-gray-200">
+                <div class="h-48 bg-gray-200 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-75"></div>
+                    <div class="relative h-full flex items-center justify-center">
+                        <span class="text-white text-4xl">Project 1</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Industrial Automation Upgrade</h3>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="tech-badge bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">PLC</span>
+                        <span class="tech-badge bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">HMI</span>
+                        <span class="tech-badge bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">Automation</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Modernized legacy manufacturing systems with advanced PLC controls and intuitive HMI interfaces, increasing production efficiency by 35%.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">Read Case Study 
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card bg-white rounded-xl overflow-hidden border border-gray-200">
+                <div class="h-48 bg-gray-200 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-600 opacity-75"></div>
+                    <div class="relative h-full flex items-center justify-center">
+                        <span class="text-white text-4xl">Project 2</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Manufacturing Dashboard</h3>
+                    <div class="flex flex-wrap mb-4">
+                        <span class="tech-badge bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">React</span>
+                        <span class="tech-badge bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">Node.js</span>
+                        <span class="tech-badge bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">IoT</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Developed a real-time monitoring dashboard for factory operations, providing actionable insights and reducing downtime by 27%.</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">View Project 
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">Our Work in Action</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
+                    <div class="w-full h-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center text-white">
+                        <span>Lab Setup</span>
+                    </div>
+                </div>
+                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
+                    <div class="w-full h-full bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center text-white">
+                        <span>Training</span>
+                    </div>
+                </div>
+                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
+                    <div class="w-full h-full bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center text-white">
+                        <span>Machining</span>
+                    </div>
+                </div>
+                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
+                    <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center text-white">
+                        <span>Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Products Preview -->
+        <section id="products" class="py-20 px-8 bg-gradient-to-br from-blue-50 to-indigo-50">
+            <div class="container mx-auto max-w-6xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+                    <p class="text-xl text-gray-600">Tools built from real lab and industry problems</p>
+                </div>
+                
+                <div class="space-y-12">
+                    <!-- Shearionbot -->
+                    <div class="bg-white p-10 rounded-2xl shadow-lg card-hover">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center text-4xl">
+                                🤖
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-3xl font-bold text-gray-900 mb-3">Shearionbot</h3>
+                                <p class="text-lg text-gray-600 mb-4">Custom Knowledge-Base Chatbot Platform</p>
+                                <p class="text-gray-700 mb-4">
+                                    Your own private brain for documents, databases and devices. Build "bot-things" that answer questions from your own knowledge base.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-badge">LLM Integration</span>
+                                    <span class="tech-badge">Role-Based Access</span>
+                                    <span class="tech-badge">Multi-Bot Platform</span>
+                                    <span class="tech-badge">AR/VR Ready</span>
+                                </div>
+                                <p class="text-sm text-gray-500">Perfect for companies, training institutes, law firms, and retail businesses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TIDAPortal -->
+                    <div class="bg-white p-10 rounded-2xl shadow-lg card-hover">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center text-4xl">
+                                📊
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-3xl font-bold text-gray-900 mb-3">TIDAPortal</h3>
+                                <p class="text-lg text-gray-600 mb-4">Totally Integrated Data Analyser</p>
+                                <p class="text-gray-700 mb-4">
+                                    From live signals to structured time-series knowledge base. Connect to TCP/IP-enabled machines and build a diagnostics powerhouse.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-badge">Time-Series Storage</span>
+                                    <span class="tech-badge">Multi-Channel Diagnostics</span>
+                                    <span class="tech-badge">TCP/IP Connectivity</span>
+                                    <span class="tech-badge">Digital Twin Ready</span>
+                                </div>
+                                <p class="text-sm text-gray-500">Ideal for lab rigs, pilot lines, and manufacturing diagnostics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pymodla -->
+                    <div class="bg-white p-10 rounded-2xl shadow-lg card-hover border-2 border-yellow-400">
+                        <div class="flex items-start gap-6">
+                            <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center text-4xl">
+                                🐍
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <h3 class="text-3xl font-bold text-gray-900">Pymodla</h3>
+                                    <span class="bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold">Work in Progress</span>
+                                </div>
+                                <p class="text-lg text-gray-600 mb-4">Model-Based Design on Python</p>
+                                <p class="text-gray-700 mb-4">
+                                    Block-diagram modelling powered by Python. Like Simulink/Simscape, but open, Python-based, and deployment-ready.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="tech-badge">Block Diagrams</span>
+                                    <span class="tech-badge">Python Backend</span>
+                                    <span class="tech-badge">Export to C</span>
+                                    <span class="tech-badge">PLC/MCU Deployment</span>
+                                </div>
+                                <p class="text-sm text-gray-500">Coming soon: From simulation to embedded deployment, all in Python</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Partners & Certifications Section -->
+<section id="partners" class="py-20 bg-white">
+    <div class="container mx-auto px-8 max-w-6xl">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Partners & Certifications</h2>
+            <p class="text-xl text-gray-600">Building trusted partnerships, one step at a time</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-6"></div>
+        </div>
+
+        <div class="bg-blue-50 rounded-2xl p-8 md:p-12 text-center mb-16">
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Partnerships</h3>
+                <p class="text-gray-600 mb-6">
+                    We're proud to collaborate with industry leaders and maintain the highest standards of excellence through our certifications.
+                </p>
+                <p class="text-gray-500 italic">
+                    This section is currently under construction as we finalize our partnerships and certification details.
+                </p>
+            </div>
+        </div>
+
+        <!-- Partner Logos -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center mb-16">
+            <div class="partner-logo p-4 h-24 flex items-center justify-center">
+                <div class="w-full h-12 bg-gray-200 rounded flex items-center justify-center text-gray-400">Partner 1</div>
+            </div>
+            <div class="partner-logo p-4 h-24 flex items-center justify-center">
+                <div class="w-full h-12 bg-gray-200 rounded flex items-center justify-center text-gray-400">Partner 2</div>
+            </div>
+            <div class="partner-logo p-4 h-24 flex items-center justify-center">
+                <div class="w-full h-12 bg-gray-200 rounded flex items-center justify-center text-gray-400">Partner 3</div>
+            </div>
+            <div class="partner-logo p-4 h-24 flex items-center justify-center">
+                <div class="w-full h-12 bg-gray-200 rounded flex items-center justify-center text-gray-400">Partner 4</div>
+            </div>
+        </div>
+
+        <!-- Certification Badges -->
+        <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">Our Certifications</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <p class="font-medium text-gray-700">ISO 9001</p>
+                    <p class="text-sm text-gray-500">Quality Management</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <p class="font-medium text-gray-700">ISO 14001</p>
+                    <p class="text-sm text-gray-500">Environmental</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <p class="font-medium text-gray-700">OHSAS 18001</p>
+                    <p class="text-sm text-gray-500">Health & Safety</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <p class="font-medium text-gray-700">Coming Soon</p>
+                    <p class="text-sm text-gray-500">More Certifications</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <p class="text-gray-600 mb-6">Interested in partnering with us or learning more about our certifications?</p>
+            <a href="#contact" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 transition-colors duration-200">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer CTA -->
+        <section id="contact" class="py-20 px-8 bg-gradient-to-r from-purple-900 to-indigo-900 text-white">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-4xl font-bold mb-6">Let's Build Something Together</h2>
+                <p class="text-xl text-gray-300 mb-10">
+                    Tell us about your project, training requirement, or collaboration idea.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="mailto:contact@shearion.com" class="bg-white text-purple-900 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                        contact@shearion.com
+                    </a>
+                    <span class="text-gray-400">or</span>
+                    <a href="#contact" class="glass-effect px-8 py-4 rounded-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all">
+                        Fill Contact Form
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400 mt-8">
+                    We're a small team. Responses might not be instant, but they'll be thoughtful.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-400 py-12 px-8">
+            <div class="container mx-auto text-center">
+                <p class="text-lg font-semibold text-white mb-2">Shearion</p>
+                <p class="mb-4">Engineering Studio • Hardware • Software • Training</p>
+                <p class="text-sm">&copy; 2024 Shearion. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-white');
+                link.classList.add('text-gray-300');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-300');
+                    link.classList.add('text-white');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
