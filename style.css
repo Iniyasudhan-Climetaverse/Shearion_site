@@ -23,7 +23,7 @@
   50% { transform: translateY(-10px); }
 }
 
-/* Additional Custom Styles
+/* Additional Custom Styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); */
 
 * {
@@ -73,7 +73,7 @@
 
 .content-area {
     transition: margin-right 0.3s ease-in-out;
-    margin-right: 0;
+    margin-right: 280px;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -331,6 +331,8 @@
         position: relative;
     }
     .content-area {
-        margin-right: 0;
+        margin-right: 280;
     }
 }
+
+

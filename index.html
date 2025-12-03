@@ -92,8 +92,13 @@
     <div class="content-area">
         
         <!-- Hero Section -->
-        <section id="home" class="relative overflow-hidden">
-            <div class="container mx-auto px-8 py-20">
+        <section id="home" class="relative overflow-hidden min-h-screen flex items-center">
+            <!-- Background Image -->
+            <!-- <div class="absolute inset-0 z-0">
+                <img src="images/labsetup.JPG" alt="Our Engineering Lab" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 to-gray-900/60"></div>
+            </div> -->
+            <div class="container mx-auto px-8 py-20 relative z-10">
                 <div class="glass-effect">
                     <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                         Engineering Solutions <br> 
@@ -551,89 +556,97 @@
 <!-- Project stories Preview -->
 <!-- Projects & Stories Section -->
 <section id="projects" class="py-20 bg-gray-50">
-    <div class="container mx-auto px-8 max-w-6xl">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-900 mb-4">Projects & Stories</h2>
-            <p class="text-xl text-gray-600">Real-world solutions and success stories from our engineering journey</p>
+    <div class="grid md:grid-cols-2 gap-6 mb-12">
+    <!-- Mechanical Engineering with Video -->
+    <div class="project-card bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-md transition-shadow duration-300">
+        <div class="h-48 relative overflow-hidden">
+            <video autoplay loop muted playsinline class="w-full h-full object-cover">
+                <source src="images/Precisionvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-8 mb-16">
-            <!-- Project 1 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden border border-gray-200">
-                <div class="h-48 bg-gray-200 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-600 opacity-75"></div>
-                    <div class="relative h-full flex items-center justify-center">
-                        <span class="text-white text-4xl">Project 1</span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Industrial Automation Upgrade</h3>
-                    <div class="flex flex-wrap mb-4">
-                        <span class="tech-badge bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">PLC</span>
-                        <span class="tech-badge bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">HMI</span>
-                        <span class="tech-badge bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">Automation</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">Modernized legacy manufacturing systems with advanced PLC controls and intuitive HMI interfaces, increasing production efficiency by 35%.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">Read Case Study 
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
+        <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Precision Mechanical Engineering</h3>
+            <div class="flex flex-wrap mb-2">
+                <span class="tech-badge bg-blue-100 text-blue-800 text-[10px] font-medium me-1 px-2 py-0.5 rounded mb-1">CNC</span>
+                <span class="tech-badge bg-purple-100 text-purple-800 text-[10px] font-medium me-1 px-2 py-0.5 rounded mb-1">Prototyping</span>
+                <span class="tech-badge bg-green-100 text-green-800 text-[10px] font-medium me-1 px-2 py-0.5 rounded mb-1">CAD/CAM</span>
             </div>
-
-            <!-- Project 2 -->
-            <div class="project-card bg-white rounded-xl overflow-hidden border border-gray-200">
-                <div class="h-48 bg-gray-200 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-teal-600 opacity-75"></div>
-                    <div class="relative h-full flex items-center justify-center">
-                        <span class="text-white text-4xl">Project 2</span>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Manufacturing Dashboard</h3>
-                    <div class="flex flex-wrap mb-4">
-                        <span class="tech-badge bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">React</span>
-                        <span class="tech-badge bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">Node.js</span>
-                        <span class="tech-badge bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded mb-2">IoT</span>
-                    </div>
-                    <p class="text-gray-600 mb-4">Developed a real-time monitoring dashboard for factory operations, providing actionable insights and reducing downtime by 27%.</p>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">View Project 
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Photo Gallery -->
-        <div class="text-center">
-            <h3 class="text-2xl font-bold text-gray-900 mb-8">Our Work in Action</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center text-white">
-                        <span>Lab Setup</span>
-                    </div>
-                </div>
-                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center text-white">
-                        <span>Training</span>
-                    </div>
-                </div>
-                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center text-white">
-                        <span>Machining</span>
-                    </div>
-                </div>
-                <div class="h-40 bg-gray-200 rounded-lg overflow-hidden">
-                    <div class="w-full h-full bg-gradient-to-br from-yellow-400 to-orange-600 flex items-center justify-center text-white">
-                        <span>Prototyping</span>
-                    </div>
-                </div>
-            </div>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">State-of-the-art mechanical engineering solutions with precision machining and rapid prototyping capabilities.</p>
+            <a href="#contact" class="text-blue-600 hover:text-blue-800 text-sm font-medium inline-flex items-center">Get a Quote 
+                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
         </div>
     </div>
+
+    <!-- Training & Education -->
+    <div class="project-card bg-white rounded-lg overflow-hidden border border-gray-200 hover:shadow-md transition-shadow duration-300">
+        <div class="h-48 relative overflow-hidden">
+            <img src="images/training.jpg" alt="Training & Education" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Professional Training</h3>
+            <div class="flex flex-wrap mb-2">
+                <span class="tech-badge bg-red-100 text-red-800 text-[10px] font-medium me-1 px-2 py-0.5 rounded mb-1">Workshops</span>
+                <span class="tech-badge bg-yellow-100 text-yellow-800 text-[10px] font-medium me-1 px-2 py-0.5 rounded mb-1">Certification</span>
+                <span class="tech-badge bg-indigo-100 text-indigo-800 text-[10px] font-medium me-1 px-2 py-0.5 rounded mb-1">Hands-on</span>
+            </div>
+            <p class="text-sm text-gray-600 mb-3 line-clamp-2">Comprehensive training programs covering industrial automation, robotics, and advanced manufacturing technologies.</p>
+            <a href="#contact" class="text-blue-600 hover:text-blue-800 text-sm font-medium inline-flex items-center">View Courses 
+                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+
+        <!-- Our Work in Action Gallery -->
+        <!-- Our Work in Action Gallery -->
+<div class="text-center">
+    <h3 class="text-2xl font-bold text-gray-900 mb-8">Our Work in Action</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+        <!-- Lab Setup -->
+        <div class="h-48 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+            <img src="images/labsetup.jpg" alt="Engineering Lab Setup" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white font-medium text-lg">Lab Setup</span>
+            </div>
+        </div>
+
+        <!-- Training -->
+        <div class="h-48 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+            <img src="images/training.jpg" alt="Professional Training" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white font-medium text-lg">Training</span>
+            </div>
+        </div>
+
+        <!-- Machining -->
+        <div class="h-48 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+            <img src="images/mechanical.jpg" alt="Precision Machining" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white font-medium text-lg">Machining</span>
+            </div>
+        </div>
+
+        <!-- Prototyping -->
+        <div class="h-48 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 relative">
+            <img src="images/prototyping.jpg" alt="Rapid Prototyping" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-white font-medium text-lg">Prototyping</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 </section>
 
         <!-- Products Preview -->
@@ -739,129 +752,147 @@
         </div>
     </section>
     <!-- Partners Grid -->
-    <section class="py-20">
-        <div class="max-w-6xl mx-auto px-6">
+    <!-- Partners Grid -->
+<section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <!-- Confirmed Partnerships -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Confirmed Partnerships</h2>
             
-            <!-- Confirmed Partnerships -->
-            <div class="mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-8">Confirmed Partnerships</h2>
-                
-                <div class="grid gap-8">
-                    <!-- Siemens & Altair -->
-                    <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden">
-                        <div class="p-8 md:p-10">
-                            <div class="flex flex-col md:flex-row md:items-start gap-6">
-                                <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl flex items-center justify-center text-5xl shadow-lg">
-                                    💼
-                                </div>
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Siemens & Altair</h3>
-                                        <span class="partner-badge badge-confirmed">Confirmed</span>
-                                    </div>
-                                    <p class="text-xl text-gray-600 mb-4 font-semibold">Software Suite Sales Distributor</p>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        Siemens and Altair engineering software suites supplied with implementation and training support.
-                                    </p>
-                                </div>
+            <div class="grid gap-8">
+                <!-- Siemens & Altair -->
+                <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden">
+                    <div class="p-8 md:p-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+                            
+                            <!-- IMAGE BOX -->
+                            <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+                                <img src="images/siemens.png" class="w-full h-full object-contain" alt="Siemens & Altair">
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Epson -->
-                    <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden">
-                        <div class="p-8 md:p-10">
-                            <div class="flex flex-col md:flex-row md:items-start gap-6">
-                                <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center text-5xl shadow-lg">
-                                    🤖
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-3">
+                                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Siemens & Altair</h3>
+                                    <span class="partner-badge badge-confirmed">Confirmed</span>
                                 </div>
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Epson</h3>
-                                        <span class="partner-badge badge-confirmed">Confirmed</span>
-                                    </div>
-                                    <p class="text-xl text-gray-600 mb-4 font-semibold">Authorized Robotics & Machine Vision Dealer</p>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        Epson industrial robots and vision systems with turnkey integration, programming, and training.
-                                    </p>
-                                </div>
+                                <p class="text-xl text-gray-600 mb-4 font-semibold">Software Suite Sales Distributor</p>
+                                <p class="text-gray-700 text-lg leading-relaxed">
+                                    Siemens and Altair engineering software suites supplied with implementation and training support.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Partnerships in Progress -->
-            <div>
-                <h2 class="text-3xl font-bold text-gray-900 mb-8">Partnerships in Progress</h2>
-                
-                <div class="grid gap-8">
-                    <!-- Delta -->
-                    <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden border-2 border-blue-200">
-                        <div class="p-8 md:p-10">
-                            <div class="flex flex-col md:flex-row md:items-start gap-6">
-                                <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-5xl shadow-lg">
-                                    ⚡
-                                </div>
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Delta</h3>
-                                        <span class="partner-badge badge-progress">In Progress</span>
-                                    </div>
-                                    <p class="text-xl text-gray-600 mb-4 font-semibold">Automation & Drives Partnership</p>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        Partnership under progress for automation controllers, servo drives, and industrial drive systems.
-                                    </p>
-                                </div>
+                <!-- Epson -->
+                <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden">
+                    <div class="p-8 md:p-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+
+                            <!-- IMAGE BOX -->
+                            <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+                                <img src="images/Epson.png" class="w-full h-full object-contain" alt="Epson">
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- ABB Robotics -->
-                    <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden border-2 border-blue-200">
-                        <div class="p-8 md:p-10">
-                            <div class="flex flex-col md:flex-row md:items-start gap-6">
-                                <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl flex items-center justify-center text-5xl shadow-lg">
-                                    🦾
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-3">
+                                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Epson</h3>
+                                    <span class="partner-badge badge-confirmed">Confirmed</span>
                                 </div>
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">ABB Robotics</h3>
-                                        <span class="partner-badge badge-progress">In Progress</span>
-                                    </div>
-                                    <p class="text-xl text-gray-600 mb-4 font-semibold">System Integrator Partnership</p>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        System integrator partnership under progress for ABB industrial robotics and automation solutions.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- KUKA Robotics -->
-                    <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden border-2 border-blue-200">
-                        <div class="p-8 md:p-10">
-                            <div class="flex flex-col md:flex-row md:items-start gap-6">
-                                <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center text-5xl shadow-lg">
-                                    🏭
-                                </div>
-                                <div class="flex-1">
-                                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900">KUKA Robotics</h3>
-                                        <span class="partner-badge badge-progress">In Progress</span>
-                                    </div>
-                                    <p class="text-xl text-gray-600 mb-4 font-semibold">System Integrator Partnership</p>
-                                    <p class="text-gray-700 text-lg leading-relaxed">
-                                        System integrator partnership under progress for KUKA robotics and intelligent automation systems.
-                                    </p>
-                                </div>
+                                <p class="text-xl text-gray-600 mb-4 font-semibold">Authorized Robotics & Machine Vision Dealer</p>
+                                <p class="text-gray-700 text-lg leading-relaxed">
+                                    Epson industrial robots and vision systems with turnkey integration, programming, and training.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Partnerships in Progress -->
+        <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">Partnerships in Progress</h2>
+            
+            <div class="grid gap-8">
+                <!-- Delta -->
+                <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden border-2 border-blue-200">
+                    <div class="p-8 md:p-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+
+                            <!-- IMAGE BOX -->
+                            <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+                                <img src="images/Delta.png" class="w-full h-full object-contain" alt="Delta">
+                            </div>
+
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-3">
+                                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Delta</h3>
+                                    <span class="partner-badge badge-progress">In Progress</span>
+                                </div>
+                                <p class="text-xl text-gray-600 mb-4 font-semibold">Automation & Drives Partnership</p>
+                                <p class="text-gray-700 text-lg leading-relaxed">
+                                    Partnership under progress for automation controllers, servo drives, and industrial drive systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ABB Robotics -->
+                <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden border-2 border-blue-200">
+                    <div class="p-8 md:p-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+
+                            <!-- IMAGE BOX -->
+                            <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-red-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+                                <img src="images/ABB.png" class="w-full h-full object-contain" alt="ABB Robotics">
+                            </div>
+
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-3">
+                                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">ABB Robotics</h3>
+                                    <span class="partner-badge badge-progress">In Progress</span>
+                                </div>
+                                <p class="text-xl text-gray-600 mb-4 font-semibold">System Integrator Partnership</p>
+                                <p class="text-gray-700 text-lg leading-relaxed">
+                                    System integrator partnership under progress for ABB industrial robotics and automation solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KUKA Robotics -->
+                <div class="bg-white rounded-2xl shadow-lg card-hover overflow-hidden border-2 border-blue-200">
+                    <div class="p-8 md:p-10">
+                        <div class="flex flex-col md:flex-row md:items-start gap-6">
+
+                            <!-- IMAGE BOX -->
+                            <div class="flex-shrink-0 w-24 h-24 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center shadow-lg overflow-hidden">
+                                <img src="images/KUKA_Logo_.jpg" class="w-full h-full object-contain" alt="KUKA Robotics">
+                            </div>
+
+                            <div class="flex-1">
+                                <div class="flex flex-wrap items-center gap-3 mb-3">
+                                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">KUKA Robotics</h3>
+                                    <span class="partner-badge badge-progress">In Progress</span>
+                                </div>
+                                <p class="text-xl text-gray-600 mb-4 font-semibold">System Integrator Partnership</p>
+                                <p class="text-gray-700 text-lg leading-relaxed">
+                                    System integrator partnership under progress for KUKA robotics and intelligent automation systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- Footer Note -->
     <section class="py-12 bg-gray-100">
