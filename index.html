@@ -4,13 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shearion - Engineering Studio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>console.log("Tailwind loaded:", !!window.tailwind);</script> -->
+
+    <head>
+  <meta charset="UTF-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const closeMenu = document.querySelector('.close-menu');
+            const sidebar = document.querySelector('.sidebar');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    sidebar.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            }
+            
+            if (closeMenu) {
+                closeMenu.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    sidebar.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && e.target !== menuToggle) {
+                    sidebar.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body class="bg-gray-50">
+    <!-- Mobile Menu Toggle Button -->
+    <button class="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
     
     <!-- Right Sidebar Navigation -->
     <div class="sidebar">
+        <button class="close-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
         <div class="p-8">
             <div class="mb-12">
                 <h1 class="text-3xl font-bold text-white mb-2">Shearion</h1>
@@ -43,112 +95,129 @@
     <div class="content-area">
         
         <!-- Hero Section -->
-<section id="home" class="min-h-screen flex items-center relative overflow-hidden">
-    <!-- Background Image -->
-    <div class="bg-image-container">
-        <img src="images/hero-bg.jpg" alt="Background" class="bg-image">
-        <div class="bg-overlay"></div>
-    </div>
-    
-    <!-- Content with glass effect -->
-    <div class="relative z-10 container mx-auto px-8 max-w-6xl">
-        <div class="glass-effect p-8 md:p-12 rounded-2xl max-w-2xl">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                Engineering Solutions <br> 
-                <span class="text-blue-300">That Work</span>
-            </h1>
-            <p class="text-xl text-gray-200 mb-8">
-                Bridging the gap between theory and practice with hands-on engineering solutions across multiple disciplines.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center transition-colors">
-                    Get Started
-                </a>
-                <a href="#services" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg text-center backdrop-blur-sm transition-colors">
-                    Our Services
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--About card-->
-<!-- Why Shearion Section -->
-<section id="about" class="py-20 px-8 bg-white">
-    <div class="container mx-auto max-w-6xl">
-        <h2 class="text-4xl font-bold text-center mb-12">About Shearion</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-            <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-gray-900">Our Story</h3>
-                <p class="text-gray-600">
-                    We're a hands-on engineering studio that bridges the gap between theory and practice. 
-                    Unlike large consultancies, we're a small, dedicated team that builds, codes, and teaches.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
-                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="ml-3 text-gray-600">Cross-domain expertise in CS, Electronics & Mechanical Engineering</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
-                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="ml-3 text-gray-600">Practical, hands-on approach to problem-solving</p>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 mt-1">
-                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center">
-                                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <p class="ml-3 text-gray-600">Focus on real-world applications and tangible results</p>
+        <section id="home" class="relative overflow-hidden">
+            <div class="container mx-auto px-8 py-20">
+                <div class="glass-effect">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                        Engineering Solutions <br> 
+                        <span class="text-blue-300">That Work</span>
+                    </h1>
+                    <p class="text-xl text-gray-200 mb-8">
+                        Bridging the gap between theory and practice with hands-on engineering solutions across multiple disciplines.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg text-center transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Get Started
+                        </a>
+                        <a href="#about" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg text-center border-2 border-white/20 backdrop-blur-sm transition-all hover:border-blue-300">
+                            Learn More
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-gray-900">Our Vision</h3>
-                <p class="text-gray-600">
-                    Making advanced engineering tools and manufacturing know-how accessible through hands-on projects and practical training.
-                </p>
-                
-                <h3 class="text-2xl font-bold text-gray-900 mt-8">Our Mission</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="text-blue-600 mr-2">•</span>
-                        <span>Build practical, innovative products that solve real problems</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-600 mr-2">•</span>
-                        <span>Deliver cross-domain engineering solutions</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-600 mr-2">•</span>
-                        <span>Provide honest, transparent services</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-600 mr-2">•</span>
-                        <span>Offer project-based training that bridges theory and practice</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-600 mr-2">•</span>
-                        <span>Build long-term relationships based on trust and results</span>
-                    </li>
-                </ul>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2>About Shearion</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        We're a hands-on engineering studio that bridges the gap between theory and practice. 
+                        Unlike large consultancies, we're a small, dedicated team that builds, codes, and teaches.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Vision Card -->
+                    <div class="about-card">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            Our Vision
+                        </h3>
+                        <p>To revolutionize engineering education and practice by making complex concepts accessible and applicable in real-world scenarios.</p>
+                        <ul class="about-features">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Democratizing engineering knowledge
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Fostering innovation through education
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Mission Card -->
+                    <div class="about-card">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                            Our Mission
+                        </h3>
+                        <p>To provide practical, hands-on engineering solutions and education that empower individuals and organizations to solve real-world challenges.</p>
+                        <ul class="about-features">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Hands-on learning experiences
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Real-world project implementation
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Values Card -->
+                    <div class="about-card">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Our Values
+                        </h3>
+                        <p>We believe in a set of core principles that guide our work and interactions with clients and students alike.</p>
+                        <ul class="about-features">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Excellence in execution
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Continuous learning
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                Practical problem-solving
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
 </section>
         <!-- Main Services Cards -->
         <section class="py-20 px-8 bg-white">
